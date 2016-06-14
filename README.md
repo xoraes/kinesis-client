@@ -2,7 +2,7 @@
 - This program uses aws kinesis stream api to publish and consume kinesis data. It can be used to test kinesis real time stream data moving in your kinesis pipelines.
 
 ### New to GoLang ?
-    $ brew install go
+    $ brew install go or for Ubuntu see : https://github.com/golang/go/wiki/Ubuntu
     $ mkdir -p ~/gocode
     $ export GOPATH=~/gocode
     $ export PATH="${PATH}:${GOPATH}/bin"
