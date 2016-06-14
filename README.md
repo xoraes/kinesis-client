@@ -8,7 +8,7 @@
     $ mkdir -p ${HOME}/gocode
     $ export GOPATH=${HOME}/gocode
     $ export PATH="${PATH}:${GOPATH}/bin"
-    $ go get https://github.com/xoraes/kinesis-client
+    $ go get github.com/xoraes/kinesis-client
     $ go install $GOPATH/src/github.com/xoraes/kinesis-client/...
     
     
