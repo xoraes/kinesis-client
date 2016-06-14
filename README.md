@@ -4,13 +4,13 @@ Ensure you have run aws configure on your machine such that your aws access and 
 
     $ kinesis-client --help
     Usage of kinesis-client:
-      -data string
+      -data string (Optional: if -data and -datafile are not sent, the program will act as subscriber)
          data to send
-      -datafile string
+      -datafile string (Optional: if -data and -datafile are not sent, the program will act as subscriber)
         file containing data to send
       -partition string
-        partition key (default "RANDOM")
+        partition key (default "RANDOM", used to send data to a particular shard based on hash of this partition key)
       -region string
         aws region (default "us-east-1")
-      -stream string
+      -stream string (Required)
         stream name
