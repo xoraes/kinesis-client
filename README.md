@@ -3,9 +3,9 @@
 - This tool uses stream api, not the KCL - thus no checkpointing is done and the stream will available for re consumption by your KCL application. 
 
 ### Installation steps if you are new to GoLang !
-    $ brew install go (for Ubuntu see : https://github.com/golang/go/wiki/Ubuntu)
+    $ brew update;brew install go [for Ubuntu see : https://github.com/golang/go/wiki/Ubuntu]
     $ mkdir -p ${HOME}/gocode
-    $ export GOPATH="${HOME}/gocode";export PATH="${PATH}:${GOPATH}/bin"
+    $ export GOPATH="${HOME}/gocode";export PATH="${PATH}:${GOPATH}/bin" [might want to stick this to .bashrc or .profile]
     $ go install github.com/xoraes/kinesis-client/...
     
     
