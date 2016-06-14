@@ -4,10 +4,8 @@
 ### New to GoLang ?
     $ brew install go (for Ubuntu see : https://github.com/golang/go/wiki/Ubuntu)
     $ mkdir -p ${HOME}/gocode
-    $ export GOPATH=${HOME}/gocode
-    $ export PATH="${PATH}:${GOPATH}/bin"
-    $ go get github.com/xoraes/kinesis-client
-    $ cd ${GOPATH}/src/github.com/xoraes/kinesis-client; go install ./...
+    $ export GOPATH="${HOME}/gocode";export PATH="${PATH}:${GOPATH}/bin"
+    $ go install github.com/xoraes/kinesis-client/...
     
     
 Ensure you have run "aws configure" on your machine such that your aws access and secret are in ~/.aws/credentials.
