@@ -24,9 +24,12 @@ Ensure you have run "aws configure" on your machine such that your aws access an
       -stream string (Required)
         stream name
 ### Publisher Example:
-    Send json data in hello.json to stream called "Hello-Stream" in us-east-1
+    Send data in hello.json to the stream called "Hello-Stream" in us-east-1 region
     $ kinesis-client -datafile ~/hello.json -stream "Hello-Stream" 
     
+    Send data to the stream called "Hello-Stream" in us-east-1 region
+    $ kinesis-client -data "UPDATE /event/123" -stream "Hello-Stream" 
+    
 ### Subscriber Example:
-    Listen and print real time data in stream called "Hello-Stream" in us-east-1
+    Listen and print real time data in stream called "Hello-Stream" in us-east-1 region
     $ kinesis-client -stream "Hello-Stream" 
