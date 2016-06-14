@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 	"io/ioutil"
-	klient "github.com/vevo/kinesis-client"
+	klient "github.com/xoraes/kinesis-client"
 )
 
 var (
