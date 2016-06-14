@@ -1,6 +1,6 @@
 # kinesis-client
 
-# New to GoLang ?
+### New to GoLang ?
     $ brew install go
     $ mkdir -p ~/gocode
     $ export GOPATH=~/gocode
