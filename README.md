@@ -2,9 +2,11 @@
 - This program uses aws kinesis stream api to publish and consume kinesis data. It can be used to test kinesis real time stream data moving in your kinesis pipelines.
 
 ### New to GoLang ?
-    $ brew install go or for Ubuntu see : https://github.com/golang/go/wiki/Ubuntu
-    $ mkdir -p ~/gocode
-    $ export GOPATH=~/gocode
+    $ brew install go (for osx)
+    $ for Ubuntu see : https://github.com/golang/go/wiki/Ubuntu
+    $ for windows see google
+    $ mkdir -p ${HOME}/gocode
+    $ export GOPATH=${HOME}/gocode
     $ export PATH="${PATH}:${GOPATH}/bin"
     $ go get https://github.com/xoraes/kinesis-client
     $ go install $GOPATH/src/github.com/xoraes/kinesis-client/...
