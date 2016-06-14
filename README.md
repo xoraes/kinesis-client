@@ -1,4 +1,4 @@
-# kinesis-client
+# kinesis-client - this program uses aws kinesis stream api to publish and consume kinesis data. It can be used to test kinesis real time stream data moving in your kinesis pipelines.
 
 ### New to GoLang ?
     $ brew install go
@@ -23,3 +23,10 @@ Ensure you have run "aws configure" on your machine such that your aws access an
         aws region (default "us-east-1")
       -stream string (Required)
         stream name
+### Publisher Example:
+    Send json data in hello.json to stream called "Hello-Stream" in us-east-1
+    $ kinesis-client -datafile ~/hello.json -stream "Hello-Stream" 
+    
+### Subscriber Example:
+    Listen and print real time data in stream called "Hello-Stream" in us-east-1
+    $ kinesis-client -stream "Hello-Stream" 
