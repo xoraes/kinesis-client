@@ -1,5 +1,5 @@
 # kinesis-client
-## Ensure you have run aws configure on your machine such that your aws access and secret are in ~/.aws/credentials. 
+### Ensure you have run aws configure on your machine such that your aws access and secret are in ~/.aws/credentials. 
 
 kinesis-client --help
 Usage of kinesis-client:
