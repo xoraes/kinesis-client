@@ -1,5 +1,5 @@
 # kinesis-client 
-- This program uses aws kinesis stream api to publish and consume kinesis data. It can be used to test kinesis real time stream data moving in your kinesis pipelines.
+- Uses aws kinesis stream api to publish and consume kinesis data. It should be used to test real time stream data in your kinesis pipeline. Assumes that a kinesis stream exists in your aws env. If the stream does not exist in your env/region, a 400 - stream not found error is shown.
 
 ### New to GoLang ?
     $ brew install go (for Ubuntu see : https://github.com/golang/go/wiki/Ubuntu)
