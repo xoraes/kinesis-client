@@ -1,6 +1,15 @@
 # kinesis-client
 
-Ensure you have run aws configure on your machine such that your aws access and secret are in ~/.aws/credentials.
+# New to GoLang ?
+    $ brew install go
+    $ mkdir -p ~/gocode
+    $ export GOPATH=~/gocode
+    $ export PATH="${PATH}:${GOPATH}/bin"
+    $ go get https://github.com/xoraes/kinesis-client
+    $ go install $GOPATH/src/github.com/xoraes/kinesis-client/...
+    
+    
+Ensure you have run "aws configure" on your machine such that your aws access and secret are in ~/.aws/credentials.
 
     $ kinesis-client --help
     Usage of kinesis-client:
